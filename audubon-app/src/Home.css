@@ -1,0 +1,25 @@
+
+.headerContainer {
+    display: flex;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    float: right;
+}
+
+.imageContainer {
+    display: flex;
+    margin: 0 0 0 10%;
+    flex-wrap: wrap;
+}
+
+.bird {
+    display: flex;
+    width: 24%;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+}

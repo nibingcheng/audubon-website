@@ -1,5 +1,6 @@
 import './Show.css';
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Show extends Component {
     
@@ -9,18 +10,19 @@ class Show extends Component {
         
         return (
         <div className="Show">
-            <p>This is the showpage!</p>
+            <div id='imageLH'>
             <img src={this.props.birds[`${index}`].image} alt=""/>
-            <div className="container">
+            </div>
+            <div className="text-container">
                 <p>{this.props.birds[`${index}`].name}</p>
                 <p>({this.props.birds[`${index}`].genus})</p>
                 <h4>Conservation Status</h4>
                 <p>{this.props.birds[`${index}`].conservationStatus}</p>
-                <button>
+                <div id="read-more">
                     <a href={this.props.birds[`${index}`].homepage}>
                     Read More
                     </a>
-                </button>
+                </div>
             </div>
         </div>
         );

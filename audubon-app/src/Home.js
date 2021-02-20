@@ -1,6 +1,6 @@
 import './Home.css';
 import React, { Component } from "react";
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 class Home extends Component {
@@ -17,9 +17,11 @@ class Home extends Component {
         
         return (
         <div className="Home">
-            <p>This is the homepage!</p>
+            <div className="headerContainer">
             <h3>Birds</h3>
-            <div className="images">
+            <span>(Add a new bird)</span>
+            </div>
+            <div className="imageContainer">
             {listOfBirds}
             </div>        
         </div>

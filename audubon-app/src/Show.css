@@ -1,0 +1,25 @@
+.Show {
+    display: flex;
+    margin: 0 100px;
+    justify-content: space-around;
+}
+
+#imageLH {
+    width: 40%;
+}
+
+.text-container {
+    width: 60%;
+}
+
+a {
+    text-decoration: none;
+    color: white;  
+}
+
+#read-more {
+    margin: 50px 0;
+    width: fit-content;
+    background-color: #444444;
+    padding: 5px 10px 5px 10px;
+}

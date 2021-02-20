@@ -1,6 +1,6 @@
 import Home from "./Home";
 import './App.css';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import Show from './Show';
 
 const birds = [
@@ -83,13 +83,14 @@ function App() {
           <Link to="/"> <h1>Audubon Society</h1></Link>
       </nav>  
       <main>
-        
+        <Switch>
         <Route exact path='/'
             render={routerProps=> <Home birds={birds} {...routerProps}/>}
         />
         <Route path='/bird/:index' 
             render={routerProps=> <Show birds={birds} {...routerProps}/>}
         />
+        </Switch>
       </main>    
     </div>
   );
