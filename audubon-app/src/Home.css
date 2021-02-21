@@ -6,10 +6,6 @@
     justify-content: space-between;
 }
 
-span {
-    float: right;
-}
-
 .imageContainer {
     display: flex;
     margin: 0 0 0 10%;
@@ -22,4 +18,8 @@ span {
     margin: 50px 0;
     justify-content: center;
     align-items: center;
+}
+
+#new-bird {
+    color: black;
 }

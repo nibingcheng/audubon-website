@@ -1,0 +1,21 @@
+.form {
+    width: 35%;
+    margin: 0 auto;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+#cs {
+    height: 120px;
+    width: 80%;
+}
+
+button {
+    width: fit-content;
+    background-color: #444444;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}

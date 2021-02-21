@@ -1,11 +1,10 @@
 import './Show.css';
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 class Show extends Component {
     
     render() {
-        console.log('showpage\n',this.props.match.params.index);
+        console.log('this is the showpage: index =',this.props.match.params.index);
         let index = this.props.match.params.index;
         
         return (

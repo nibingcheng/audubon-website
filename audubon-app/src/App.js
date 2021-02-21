@@ -2,6 +2,7 @@ import Home from "./Home";
 import './App.css';
 import { Route, Link, Switch } from "react-router-dom";
 import Show from './Show';
+import Create from './Create';
 
 const birds = [
   {
@@ -75,8 +76,8 @@ const birds = [
   }
 ];
 
-function App() {
-  
+function App(props) {
+  // console.log('This is the App page\n');
   return (
     <div className="App">
       <nav>
@@ -89,6 +90,9 @@ function App() {
         />
         <Route path='/bird/:index' 
             render={routerProps=> <Show birds={birds} {...routerProps}/>}
+        />
+        <Route path='/create' 
+            render={routerProps=> <Create {...routerProps}/>}
         />
         </Switch>
       </main>    
