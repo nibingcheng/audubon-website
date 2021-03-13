@@ -91,7 +91,7 @@ function App(props) {
         <Route path='/bird/:index' 
             render={routerProps=> <Show birds={birds} {...routerProps}/>}
         />
-        <Route path='/create' 
+        <Route path='/create'        
             render={routerProps=> <Create {...routerProps}/>}
         />
         </Switch>
